@@ -39,7 +39,6 @@ static NSString *kUIActionSheetCompletionBlockKey = @"kUIActionSheetCompletionBl
         }
     }
     return self;
-
 }
 
 - (void)showInView:(UIView *)view completionBlock:(UIActionSheetCompletionBlock)block
