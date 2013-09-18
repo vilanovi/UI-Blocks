@@ -44,7 +44,7 @@ static NSString *kUIActionSheetCompletionBlockKey = @"kUIActionSheetCompletionBl
         if (destructiveButton)
         {
             [self addButtonWithTitle:destructiveButton];
-            [self setDestructiveButtonIndex:0];
+            self.destructiveButtonIndex = 0;
         }
         
         for (NSString *button in otherButtons)
@@ -53,8 +53,10 @@ static NSString *kUIActionSheetCompletionBlockKey = @"kUIActionSheetCompletionBl
         if (cancelButton)
         {
             [self addButtonWithTitle:cancelButton];
-            [self setCancelButtonIndex:self.numberOfButtons-1];
+            self.cancelButtonIndex = self.numberOfButtons - 1;
         }
+        
+        
     }
     return self;
 }
